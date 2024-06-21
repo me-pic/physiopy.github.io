@@ -2,6 +2,9 @@ site_name: Physiopy
 site_description: Physiopy
 site_author: The Physiopy developers
 site_url: https://physiopy.github.io
+repo_url: https://github.com/physiopy/physiopy.github.io
+repo_name: physiopy/physiopy.github.io
+
 
 # Copyright
 copyright: Copyright &copy; 2020-2024, The Physiopy Community
@@ -11,6 +14,7 @@ theme:
   favicon: assets/images/favicon.png
   logo: assets/images/logo.png
   features:
+    - navigation.indexes
     - navigation.sections
   palette:
     # Palette toggle for light mode
@@ -28,16 +32,18 @@ theme:
 nav:
     - Home: index.md
     - Libraries:
+      - Introduction: libraries/index.md
       - phys2bids: libraries/phys2bids.md
       - phys2denoise: libraries/phys2denoise.md
       - peakdet: libraries/peakdet.md
-    - Community Practices:
-      - Community Practices: https://physiopy-community-guidelines.readthedocs.io/en/latest/index.html
+    - Community Practices: https://physiopy-community-guidelines.readthedocs.io/en/latest/index.html
     - Contributor Guide: 
+      - Introduction: guide/index.md
       - Goals: guide/goals.md
-      - Getting started: guide/getting-started.md
-      - Contributing to Codebase: guide/contributing-codebase.md
-      - Contributing to Documentation: guide/contributing-documentation.md
+      - Getting started: 
+        - Introduction: guide/getting-started/index.md
+        - Contributing to Codebase: guide/getting-started/contributing-codebase.md
+        - Contributing to Documentation: guide/getting-started/contributing-documentation.md
     - Community:
       - Welcome: community/index.md
       - Getting Started: community/gettingstarted.md
@@ -48,7 +54,7 @@ nav:
     - Tutorials:
       - OHBM 2023: ohbm23_tutorials.md
     - Events:
-      - Events: events/events.md
+      - Events: events/index.md
       
 
 
